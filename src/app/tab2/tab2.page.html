@@ -1,10 +1,11 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Ask me</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title>About Us</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  
-
+<ion-content color="dark" scrollbar-y="false">
+  <app-expand-hidden *ngFor="let technology of technologies" name="{{ technology.name }}"
+    description="{{ technology.description }}" >
+  </app-expand-hidden>
 </ion-content>

@@ -1,0 +1,9 @@
+<h2 (click)="toggleAccordion()">
+  {{ name }}
+  <span *ngIf="isMenuOpen"><ion-icon name="arrow-dropup"></ion-icon></span>
+  
+  <span *ngIf="!isMenuOpen"><ion-icon name="arrow-dropdown"></ion-icon></span>
+</h2>
+<div [ngClass]="this.isMenuOpen ? 'active' : 'inactive'">
+  <p>{{ description }}</p>
+</div>
