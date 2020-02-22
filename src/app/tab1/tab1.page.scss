@@ -27,15 +27,20 @@ p {
   line-height: 1.5; 
 }
 
+@mixin headingColor{
+  color: #eceff1;
+}
+@mixin contentColor{
+  color: #90a4ae;
+}
 
 
 .textcolorHeading {
-  color: #eceff1;
+  @include headingColor;
   text-align: center;
 }
-.textcolorContent {
-  text-align: center;
 
-  color: #90a4ae;
-  // font-size: medium;
+.textcolorContent {
+  @include contentColor;
+  text-align: center;
 }

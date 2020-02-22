@@ -1,0 +1,14 @@
+@import '../tab1/tab1.page.scss'; 
+
+ion-card{
+    width:100%;
+}
+
+ion-card-title {
+  @include headingColor;
+  text-align: center;
+}
+ion-col {
+  @include contentColor;
+  text-align: center;
+}
