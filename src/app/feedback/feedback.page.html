@@ -1,0 +1,81 @@
+<ion-header>
+
+  <ion-toolbar >
+
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card >
+    
+    <ion-card-content >
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input [(ngModel)]="txtName"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Class</ion-label>
+          <ion-select>
+            <ion-select-option value="fy">FYMCA</ion-select-option>
+            <ion-select-option value="sy">SYMCA</ion-select-option>
+            <ion-select-option value="ty">TYMCA</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Roll Number</ion-label>
+          <ion-input [(ngModel)]="txtRoll"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Notification</ion-label>
+          <ion-toggle slot="end" name="notify" color="danger"></ion-toggle>
+        </ion-item>
+        <br />
+        <ion-item>
+          <ion-label style="font-size: small;">Feedback:</ion-label>
+        </ion-item>
+        <ion-list>
+          <ion-item>
+            <ion-label>Simplicity</ion-label>
+            <ion-checkbox color="primary" slot="end"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label>Good</ion-label>
+            <ion-checkbox color="primary" slot="end"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label>Bad</ion-label>
+            <ion-checkbox color="primary" slot="end"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label>Amazing</ion-label>
+            <ion-checkbox color="primary" slot="end"></ion-checkbox>
+          </ion-item>
+
+        </ion-list>
+
+        <ion-item>
+          <ion-label position="floating">Any Suggestions?</ion-label>
+          <ion-input [(ngModel)]="txtSuggestion"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" (click)="showToast()" style="padding:0px 10xp 0 px 10 px">Submit</ion-button>
+
+
+
+
+
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

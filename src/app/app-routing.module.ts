@@ -2,9 +2,14 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './home/home.module#HomePageModule' },  {
+  { path: '', loadChildren: './home/home.module#HomePageModule' },
+  {
     path: 'timetable',
     loadChildren: () => import('./timetable/timetable.module').then( m => m.TimetablePageModule)
+  },
+  {
+    path: 'feedback',
+    loadChildren: () => import('./feedback/feedback.module').then( m => m.FeedbackPageModule)
   }
 
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
