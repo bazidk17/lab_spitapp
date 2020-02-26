@@ -16,12 +16,12 @@
     <ion-card-content >
       <ion-list>
         <ion-item>
-          <ion-label position="floating">Name</ion-label>
+          <ion-label  style="font-size: medium;" position="floating">Name</ion-label>
           <ion-input [(ngModel)]="txtName"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label>Class</ion-label>
+          <ion-label style="font-size: medium;">Class</ion-label>
           <ion-select>
             <ion-select-option value="fy">FYMCA</ion-select-option>
             <ion-select-option value="sy">SYMCA</ion-select-option>
@@ -30,33 +30,33 @@
         </ion-item>
 
         <ion-item>
-          <ion-label position="floating">Roll Number</ion-label>
+          <ion-label style="font-size: medium;" position="floating">Roll Number</ion-label>
           <ion-input [(ngModel)]="txtRoll"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label>Notification</ion-label>
-          <ion-toggle slot="end" name="notify" color="danger"></ion-toggle>
+          <ion-label style="font-size: medium;">Notification</ion-label>
+          <ion-toggle slot="end" name="notify" color="primary"></ion-toggle>
         </ion-item>
         <br />
         <ion-item>
-          <ion-label style="font-size: small;">Feedback:</ion-label>
+          <ion-label style="font-size: medium;">Feedback:</ion-label>
         </ion-item>
         <ion-list>
           <ion-item>
-            <ion-label>Simplicity</ion-label>
+            <ion-label style="font-size: small;">Simplicity</ion-label>
             <ion-checkbox color="primary" slot="end"></ion-checkbox>
           </ion-item>
           <ion-item>
-            <ion-label>Good</ion-label>
+            <ion-label style="font-size: small;">Aesthetically Pleasing</ion-label>
             <ion-checkbox color="primary" slot="end"></ion-checkbox>
           </ion-item>
           <ion-item>
-            <ion-label>Bad</ion-label>
+            <ion-label style="font-size: small;">Usability</ion-label>
             <ion-checkbox color="primary" slot="end"></ion-checkbox>
           </ion-item>
           <ion-item>
-            <ion-label>Amazing</ion-label>
+            <ion-label style="font-size: small;">Immersive</ion-label>
             <ion-checkbox color="primary" slot="end"></ion-checkbox>
           </ion-item>
 
