@@ -42,4 +42,9 @@ export class AppComponent {
     // window.location.replace("/form");
     this.menuCtrl.close();
   }
+  gotoHttp() {
+    this.route.navigate(["/http-post"]);
+    // window.location.replace("/form");
+    this.menuCtrl.close();
+  }
 }

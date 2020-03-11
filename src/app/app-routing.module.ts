@@ -10,7 +10,24 @@ const routes: Routes = [
   {
     path: 'feedback',
     loadChildren: () => import('./feedback/feedback.module').then( m => m.FeedbackPageModule)
-  }
+  },
+  {
+    path: 'http-exposure',
+    loadChildren:'./http-exposure/http-exposure.module#HttpExposurePageModule'
+  },
+  {
+    path: 'http-get',
+    loadChildren: () => import('./http-get/http-get.module').then( m => m.HttpGetPageModule)
+  },
+  {
+    path: 'http-get',
+    loadChildren: () => import('./http-get/http-get.module').then( m => m.HttpGetPageModule)
+  },
+  {
+    path: 'http-post',
+    loadChildren: () => import('./http-post/http-post.module').then( m => m.HttpPostPageModule)
+  },
+
 
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
   // { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},

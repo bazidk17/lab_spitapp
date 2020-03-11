@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Http Get</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container" style="text-align: center;">
+    <h2 >Click to button to fetch data</h2>
+    <button type="button" class="btn btn-primary" (click)="getDetails()">Get Data</button>
+  </div>
+
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+        <p>{{user.first_name}} {{user.last_name}} {{user.email}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

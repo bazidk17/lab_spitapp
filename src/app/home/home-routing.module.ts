@@ -52,4 +52,4 @@ const routes: Routes = [
       RouterModule
     ]
 })
-export class HomePageRoutingModule {}
+export class HomePageRoutingModule { }
