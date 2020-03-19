@@ -1,5 +1,7 @@
 {
   "name": "lab_spitapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

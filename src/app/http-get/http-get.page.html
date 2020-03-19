@@ -9,13 +9,18 @@
 
 <ion-content>
   <div class="container" style="text-align: center;">
-    <h2 >Click to button to fetch data</h2>
+    <h4>Click to button to fetch data</h4>
     <button type="button" class="btn btn-primary" (click)="getDetails()">Get Data</button>
   </div>
 
-  <ion-list>
-    <ion-item *ngFor="let user of users">
-        <p>{{user.first_name}} {{user.last_name}} {{user.email}}</p>
-    </ion-item>
-  </ion-list>
+
+  <ion-card *ngFor="let user of users" fullscreen>
+    <ion-card-header>
+      <ion-card-title>{{user.first_name}} {{user.last_name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="font-style: italic;font-size: small;">
+      {{user.email}}
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

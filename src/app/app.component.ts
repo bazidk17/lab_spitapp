@@ -43,7 +43,7 @@ export class AppComponent {
     this.menuCtrl.close();
   }
   gotoHttp() {
-    this.route.navigate(["/http-post"]);
+    this.route.navigate(["/http-exposure"]);
     // window.location.replace("/form");
     this.menuCtrl.close();
   }

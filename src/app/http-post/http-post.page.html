@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>httpPost</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Http Post</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">First Name</ion-label>
+      <ion-input [(ngModel)]="txtFName" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input [(ngModel)]="txtLName" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input [(ngModel)]="txtEmail" required></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="postDetails()">Post Data</ion-button>
 </ion-content>

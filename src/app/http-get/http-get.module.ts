@@ -15,6 +15,7 @@ import { HttpGetPage } from './http-get.page';
     IonicModule,
     HttpGetPageRoutingModule
   ],
-  declarations: [HttpGetPage]
+  declarations: [HttpGetPage],
+
 })
 export class HttpGetPageModule {}
