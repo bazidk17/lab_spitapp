@@ -12,7 +12,11 @@ const routes: Routes = [
   {
     path: 'feedback',
     loadChildren: () => import('./feedback/feedback.module').then( m => m.FeedbackPageModule)
+  },  {
+    path: 'handle-file',
+    loadChildren: () => import('./handle-file/handle-file.module').then( m => m.HandleFilePageModule)
   },
+
   // {
   //   path: 'http-exposure',
   //   loadChildren:'./http-exposure/http-exposure.module#HttpExposurePageModule'

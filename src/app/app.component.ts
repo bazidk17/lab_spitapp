@@ -47,4 +47,10 @@ export class AppComponent {
     // window.location.replace("/form");
     this.menuCtrl.close();
   }
+  gotoFileHandling(){
+    this.route.navigate(["/handle-file"]);
+    // window.location.replace("/form");
+    this.menuCtrl.close();
+  }
+  
 }
